@@ -1,8 +1,9 @@
 $(document).ready(function(){
     //11/21일 과제: 햄버거 버튼 클릭하면 메인메뉴 나오면서 햄버거 버튼 스위치 되도록 처리
-    // $(#hamburger).click(function(){
-    //     $(.main-menu).fadeIn();
-    // });
+    $('#hamburger').click(function(){
+        $(this).toggleClass('active');
+        $('.main-menu').toggleClass('active');
+    });
     new fullpage('#wrap',{
         // 섹션4,5,푸터는 정상 스크롤값으로 설정
         normalScrollElements: '.sec-4, .sec-5, .footer',
